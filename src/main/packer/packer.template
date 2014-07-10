@@ -1,0 +1,49 @@
+{
+  "variables": {
+    "region": "{{env `REGION`}}",
+    "applicationVersion": "${project.version}",
+    "accessKeyId": "{{env `ACCESS_KEY_ID`}}",
+    "secretKey": "{{env `SECRET_KEY`}}",
+    "securityGroupId": "",
+    "ami-us-west-2": "ami-6aad335a",
+    "sourceAmi": "",
+    "vpcId" : "",
+    "subnetId" : ""
+  },
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "security_group_id": "{{user `securityGroupId`}}",
+      "vpc_id": "{{user `vpcId`}}",
+      "subnet_id" : "{{user `subnetId`}}",
+      "access_key": "{{user `accessKeyId`}}",
+      "secret_key": "{{user `secretKey`}}",
+      "region": "{{user `region`}}",
+      "source_ami": "{{user `sourceAmi`}}",
+      "instance_type": "m1.small",
+      "ssh_username": "ubuntu",
+      "ami_name": "${project.artifactId}-{{user `applicationVersion`}}",
+      "run_tags": {
+        "Name": "${project.artifactId}-{{user `applicationVersion`}} (Packer AMI Creator)",
+        "Application": "${project.artifactId}",
+        "Version": "{{user `applicationVersion`}}"
+      },
+      "tags": {
+        "Name": "${project.artifactId}-{{user `applicationVersion`}}",
+        "Application": "${project.artifactId}",
+        "Version": "{{user `applicationVersion`}}"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "curl -o application.tar.gz \"http://${nexus.host}/service/local/artifact/maven/content?r=${repository_name}&g=${project.groupId}&a=${project.artifactId}&v=${project.version}&c=bundle&e=tar.gz\"",
+        "tar xf application.tar.gz",
+        "sudo chmod a+x install.sh",
+        "sudo /bin/bash ./install.sh"
+      ]
+    }
+  ]
+}
