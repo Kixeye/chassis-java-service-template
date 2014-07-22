@@ -1,19 +1,30 @@
 package com.kixeye.template;
 
-import com.kixeye.chassis.bootstrap.annotation.Destroy;
-import com.kixeye.chassis.bootstrap.annotation.Init;
+import com.kixeye.chassis.bootstrap.BootstrapException.ApplicationConfigurationNotFoundException;
+import com.kixeye.chassis.bootstrap.annotation.App;
 import com.kixeye.chassis.bootstrap.annotation.SpringApp;
+import com.kixeye.chassis.bootstrap.aws.ServerInstanceContext;
+import com.kixeye.chassis.bootstrap.configuration.ConfigurationProvider;
+import com.kixeye.chassis.bootstrap.configuration.zookeeper.ZookeeperConfigurationProvider;
 import com.kixeye.chassis.support.ChassisConfiguration;
 import com.kixeye.chassis.transport.TransportConfiguration;
+import com.netflix.config.ConcurrentMapConfiguration;
+import org.apache.commons.configuration.AbstractConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import java.io.IOException;
 
 /**
  * A template configuration.
  *
  * @author ebahtijaragic
  */
-@SpringApp(name = "JavaTemplateService",
+@App(name = "JavaTemplateService",
         propertiesResourceLocation = "classpath:/template-defaults.properties",
         configurationClasses = {
                 TransportConfiguration.class,
@@ -24,13 +35,15 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackageClasses = TemplateConfiguration.class)
 public class TemplateConfiguration {
 
-    @Init
-    public static void initialize(org.apache.commons.configuration.Configuration configuration) {
-        // Add some initialization code here!
+    @PostConstruct
+    public void init() {
+        System.out.println();
+        // Add some initialization logic here!!
     }
 
-    @Destroy
-    public static void destroy() {
+    @PreDestroy
+    public void destroy() {
+        System.out.println();
         // Add some destruction code here!
     }
 }
