@@ -37,6 +37,25 @@
         </extensions>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.1</version>
+                <configuration>
+                    <mainClass>com.kixeye.chassis.bootstrap.AppMain</mainClass>
+                    <arguments>
+                        <argument>-e</argument>
+                        <argument>local</argument>
+                        <argument>-si</argument>
+                    </arguments>
+                    <systemProperties>
+                        <systemProperty>
+                            <key>app.version</key>
+                            <value>${project.version}</value>
+                        </systemProperty>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
@@ -91,7 +110,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                  			<includeScope>runtime</includeScope>
+                            <includeScope>runtime</includeScope>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
                             <overWriteSnapshots>false</overWriteSnapshots>
@@ -101,51 +120,51 @@
                 </executions>
             </plugin>
             <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.6</version>
-				<executions>
-					<execution>
-						<id>copy-resources</id>
-						<phase>process-resources</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.outputDirectory}/packer-template</outputDirectory>
-							<resources>
-								<resource>
-									<directory>src/main/packer</directory>
-									<filtering>true</filtering>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.8</version>
-				<executions>
-					<execution>
-						<id>attach-artifacts</id>
-						<phase>package</phase>
-						<goals>
-							<goal>attach-artifact</goal>
-						</goals>
-						<configuration>
-							<artifacts>
-								<artifact>
-									<file>${project.build.outputDirectory}/packer-template/packer.template</file>
-									<type>template</type>
-									<classifier>packer</classifier>
-								</artifact>
-							</artifacts>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}/packer-template</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/packer</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>attach-artifacts</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attach-artifact</goal>
+                        </goals>
+                        <configuration>
+                            <artifacts>
+                                <artifact>
+                                    <file>${project.build.outputDirectory}/packer-template/packer.template</file>
+                                    <type>template</type>
+                                    <classifier>packer</classifier>
+                                </artifact>
+                            </artifacts>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -177,7 +196,7 @@
                     <includeConfigurationDirectoryInClasspath>false</includeConfigurationDirectoryInClasspath>
                     <environmentSetupFileName>configure</environmentSetupFileName>
                     <unixScriptTemplate>
-                    	${basedir}/src/main/jsw/unixJswScriptTemplate
+                        ${basedir}/src/main/jsw/unixJswScriptTemplate
                     </unixScriptTemplate>
                     <defaultJvmSettings>
                         <extraArguments>
@@ -314,23 +333,23 @@
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
-                                	<pluginExecutionFilter>
-                                		<groupId>
-                                			org.codehaus.gmaven
-                                		</groupId>
-                                		<artifactId>
-                                			gmaven-plugin
-                                		</artifactId>
-                                		<versionRange>
-                                			[1.4,)
-                                		</versionRange>
-                                		<goals>
-                                			<goal>execute</goal>
-                                		</goals>
-                                	</pluginExecutionFilter>
-                                	<action>
-                                		<ignore></ignore>
-                                	</action>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.gmaven
+                                        </groupId>
+                                        <artifactId>
+                                            gmaven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.4,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>execute</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
                                 </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
