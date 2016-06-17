@@ -1,0 +1,17 @@
+debugging/
+spec/
+stress/
+selenium/
+debugging/
+testapp/inbrowsertest
+docgen/
+
+.npmignore
+.travis.yml
+changes.sh
+chromedriver.log
+libpeerconnection.log
+npm-debug.log
+new.txt
+xmloutput*
+release.md
