@@ -1,0 +1,16 @@
+**// saverity_url=https://kixeye.com
+//
+//
+
+a = function(a) {
+  var d, e = null;
+  try {
+    e = JSON.parse(a.data)
+  } catch (i) {}
+  if (a && e && e.ppfn)
+    if (e.config) {
+      p = e.config, c = e.config.f, document.cookie = "PP-Corr-Id=" + e.config.s + ":" + e.config.f + ";path=/", b = e.config.s, ("undefined" != typeof e.config.h || "undefined" != typeof e.config.g) && (B = !0), r = e.config.time;
+      for (d in r) r.hasOwnProperty(d) && (PFB_4732.time.p1[d] = r[d]);
+      t(e.config), u(e.config), y.m = e.config.m, o(e.config.sc), y = PFB_4732.dataCollector.collectData(), y.referer = e.referer, y.URL = e.URL, g()
+    } else e.dc && !E ? h() : "undefined" != typeof e.fonts && (z.data.fonts = e.fonts, f())
+}
