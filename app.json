@@ -1,0 +1,29 @@
+{
+  "name": "chassis-java-service-template",
+  "scripts": {
+  },
+  "env": {
+    "FACEBOOK_APP_ID": {
+      "required": true
+    },
+    "FACEBOOK_SECRET": {
+      "required": true
+    },
+    "PATH": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
