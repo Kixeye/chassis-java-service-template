@@ -1,0 +1,114 @@
+programcreek.com
+EmAIL0@programcreek.com
+   131271oK
+
+eliteeagle@kixeye.com
+131271
+
+hafiz_radiansyah@yahoo.com
+jinggo12k
+
+ketiban90
+
+
+xbxcity                                                        
+bayu2015
+
+
+nakxbxcitybayu@yahoo.com
+bayu221
+
+berbisnis-dan-b-9343@pages.plusgoogle.com
+*>berbisnis-dan-b-9343
+
+http://wean.myopenid.com/
+131271
+
+
+kixeye.com	
+
+war.4@kixeye.com
+war.4commander
+131271Ok*&%$#@!
+
+u.at4mi@kixeye.com
+u
+.at4mi
+
+andisthermal.555@use.typekit.net
+
+username.~13@api.kixeye.com
+username
+
+http://adobe.com/go/playpanel
+
+
+Sandstrom is tough b
+  *>131271
+gmail-->setname4g@gmail.com
+
+
+giat.bangunpagi4 
+   131271Ok
+
+the_sure
+parameter_555
+username_x354
+kx-validation error
+on_book5555
+FOLLISEN_ERR.
+dodol-PA1
+  dodol-δ-Δ
+
+fault northon
+math_look555@outlook.com
+   1Aa<12345678
+
+ 919872302228-5ldbn93rcl9pt805v5d84av91jaatior.apps.googleusercontent.com 
+ nw1bfmZ-kOG9sEK8cqLsj4Rs 
+
+
+ notasecret 
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Effects - addClass demo</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px;  padding: 1em;  font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
+    .newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.6em; }
+  </style>
+  <script>
+  $(function() {
+    $( "#button" ).click(function() {
+      $( "#effect" ).addClass( "newClass", 1000, callback );
+    });
+ 
+    function callback() {
+      setTimeout(function() {
+        $( "#effect" ).removeClass( "newClass" );
+      }, 1500 );
+    }
+  });
+  </script>
+</head>
+<body>
+ 
+<div class="toggler">
+  <div id="effect" class="ui-corner-all">
+      Sandstrom, XCT-ALL-BASE, eleifend nec, semper at, lorem. Sed pede.
+  </div>
+</div>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+ 
+ 
+</body>
+</html>
