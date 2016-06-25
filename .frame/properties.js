@@ -5,6 +5,7 @@
 // controlBar is a display object (e.g. a Sprite) containing several 
 // buttons; it should stay positioned at the bottom-left corner of the 
 // Stage (below mainContent) and it should not resize when the SWF 
+// param_url: http://kixeye.com//?ref_id=13a95e6d9de036cbd098/
 // resizes. 
  
 import flash.display.Stage; 
