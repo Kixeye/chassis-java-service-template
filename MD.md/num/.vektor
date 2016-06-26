@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--suppress XmlHighlighting, XmlHighlighting, XmlHighlighting, XmlHighlighting -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script type="text/javascript">
+            window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);
+        </script>
+        <script type="text/javascript">
+        var canvasInitTime = new Date().getTime();
+        // AVG (Anti-Virus) can redefine the Function prototype.  This sets it back.
+        Function.prototype.constructor = Function;
+
+        </script>
+        <title>War Commander</title>
+
+        <link rel="stylesheet" type="text/css" href="/assets/style/wc-kx-vip.sjc-1-secure.v199.css" id="style-default"/>
+
+    </head>
+<body id="body">
+<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://static.pbc.com/js/ultimatepay-api.js"></script>
+
+<script>
+	        //no conflict jquery
+	        jQuery.noConflict();
+
+</script>
+
+<!-- /* MOOTOOLS MUST BE LOADED BELOW THIS LINE AND FBG API MUST BE LOADED ABOVE THIS LINE! */ -->
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="/assets/script/mtmore14.v199.js"></script>
+<script type="text/javascript" src="/assets/script/leaderboard.js"></script>
+<script type="text/javascript" src="https://s-assets.tp-cdn.com/static3/js/api/payment_overlay.js"></script>
+
+<script type="text/javascript">
+		var baseurl  = 'https://www.kixeye.com/game/warcommander';
+		var localurl = 'https://wc-kx-vip.sjc.kixeye.com/';
+		var cdnurl   = 'https://wc-fb-cdn6.kixeye.com/';
+		var logurl   = 'https://debuglog-lb2.sjc.kixeye.com/';
+		var pmsurl   = 'https://bi-pt-vip1.sjc.kixeye.com/';
+		var gamename = 'War Commander';
+		var user     = {"id":20024617,"ip":"111.94.71.47","uid":"1099366247","fbid":"1099366247","kxid":"510c331cc64b6856630036f3","tpid":"lfmCQjgeH8HWBhAjU6vIH4bfI0c","first_name":"Andi","last_name":"Susanto"};
+		var fbdata   = 'kxid=510c331cc64b6856630036f3&a=216862461657375&g=warcommander&username=UniqueName&email=andisthermal555%40gmail.com&expireAt=1466966246&status=active&userIp=111.94.71.47&facebookId=1099366247&facebookTokenForBusiness=AbzVFs_yl51ghNTF&token_for_business=AbzVFs_yl51ghNTF&signed_request=Nmyq9P0iZCGDAlqYeh4njG6JxXfIb25bzTVvr8HX0wI%3D.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTQ2Njk2NjI0Niwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTExLjk0LjcxLjQ3IiwiZmFjZWJvb2tJZCI6IjEwOTkzNjYyNDciLCJmYWNlYm9va1Rva2VuRm9yQnVzaW5lc3MiOiJBYnpWRnNfeWw1MWdoTlRGIn0%3D';
+
+		window.KXPoptions = {
+			namespace: 'bpfb',
+			auth_data: {
+                "kixigned_request": "Nmyq9P0iZCGDAlqYeh4njG6JxXfIb25bzTVvr8HX0wI=.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTQ2Njk2NjI0Niwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTExLjk0LjcxLjQ3IiwiZmFjZWJvb2tJZCI6IjEwOTkzNjYyNDciLCJmYWNlYm9va1Rva2VuRm9yQnVzaW5lc3MiOiJBYnpWRnNfeWw1MWdoTlRGIn0="            },
+			urls: {php: 'https://api.kixeye.com/'},
+			noSocket: true
+		};
+
+</script>
+
+<script type="text/javascript" src="/assets/script/jquery.countdown.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/style/jquery.countdown.css"/>
+
+<script type="text/javascript" src="/assets/script/browserdetect.js"></script>
+<script type="text/javascript" src="/assets/script/Array.Math.min.js"></script>
+<script type="text/javascript" src="/assets/script/fb.v199.js"></script>
+<script type="text/javascript" src="/assets/script/cc-framework.v199.js"></script>
+<script type="text/javascript" src="/assets/script/rightclick.v199.js"></script>
+<script type="text/javascript">
+
+		var kxLogger = new KxLogger({
+			'kx_logger_url':'https://bi-logging.sjc.kixeye.com/log',
+			'kx_logger_key':'qwerty',
+			'kx_logger_env':'prod',
+			'logsessionid':'200246171466951857',
+			'integ':'kxp',
+			'game':'wc',
+			'user':user,
+			'userid':'20024617',
+			'appname':'warcommander',
+			'userlevel':'39'
+		});
+
+		var cc = null;
+
+		window.addEvent('domready',function(){
+			var loadDiff = new Date().getTime() - canvasInitTime;
+			var ccdata = {
+				'integ'                     :'kxp',
+				'game'                      :'wc',
+				'preview_server'            :'0',
+				'authperms'                 :'public_profile,email,user_friends',
+				'baseurl'                   :baseurl,
+				'localurl'                  :localurl,
+				'pmsurl'                    :pmsurl,
+				'appname'                   :'warcommander',
+				'fbog_localurl'             :'http://wc-kx-vip.sjc.kixeye.com/',
+				'gamenamesh'                :'Wc',
+				'twitterurl'                :'',
+				'app_id'                    :'216862461657375',
+				'jflashvars'                :{"kxid":"510c331cc64b6856630036f3","a":"216862461657375","g":"warcommander","username":"UniqueName","email":"andisthermal555@gmail.com","expireAt":1466966246,"status":"active","userIp":"111.94.71.47","facebookId":"1099366247","facebookTokenForBusiness":"AbzVFs_yl51ghNTF","token_for_business":"AbzVFs_yl51ghNTF","signed_request":"Nmyq9P0iZCGDAlqYeh4njG6JxXfIb25bzTVvr8HX0wI=.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTQ2Njk2NjI0Niwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTExLjk0LjcxLjQ3IiwiZmFjZWJvb2tJZCI6IjEwOTkzNjYyNDciLCJmYWNlYm9va1Rva2VuRm9yQnVzaW5lc3MiOiJBYnpWRnNfeWw1MWdoTlRGIn0=","userid":20024617,"newuser":0,"apiurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/api\/","wmbasemanurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/wmbaseman\/","baseurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/api\/wc\/base\/","cdnurl":"https:\/\/wc-fb-cdn6.kixeye.com\/","gameurl":"https:\/\/wc-fb-cdn6.kixeye.com\/game\/","statsurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/recordstats.php","logurl":"https:\/\/debuglog-lb2.sjc.kixeye.com\/debug\/recorddebugdata\/","probeurl":"https:\/\/debuglog-lb2.sjc.kixeye.com\/debug\/recordloadtime\/","mapurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/worldmapv2\/","gamenamesh":"wc","integ":"kxp","low_level_min_userid":9378000,"low_level_rollout_userid":19767782,"platform_api_url":"https:\/\/api.kixeye.com\/","app_enable_response_checksum":1,"app_enable_encrypt_body":1,"locale":"en_US","splashloader":0,"siu":"https:\/\/wc-kx-vip.sjc.kixeye.com\/","worldmap_servers":"%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D","logsessionid":"200246171466951857","user_level":39,"tutorialstage":"1000"},
+				'jflashvarsf'               :{"kxid":"510c331cc64b6856630036f3","a":"216862461657375","g":"warcommander","username":"UniqueName","email":"andisthermal555@gmail.com","expireAt":1466966246,"status":"active","userIp":"111.94.71.47","facebookId":"1099366247","facebookTokenForBusiness":"AbzVFs_yl51ghNTF","token_for_business":"AbzVFs_yl51ghNTF","signed_request":"Nmyq9P0iZCGDAlqYeh4njG6JxXfIb25bzTVvr8HX0wI=.eyJreGlkIjoiNTEwYzMzMWNjNjRiNjg1NjYzMDAzNmYzIiwiYSI6IjIxNjg2MjQ2MTY1NzM3NSIsImciOiJ3YXJjb21tYW5kZXIiLCJ1c2VybmFtZSI6IlVuaXF1ZU5hbWUiLCJlbWFpbCI6ImFuZGlzdGhlcm1hbDU1NUBnbWFpbC5jb20iLCJleHBpcmVBdCI6MTQ2Njk2NjI0Niwic3RhdHVzIjoiYWN0aXZlIiwidXNlcklwIjoiMTExLjk0LjcxLjQ3IiwiZmFjZWJvb2tJZCI6IjEwOTkzNjYyNDciLCJmYWNlYm9va1Rva2VuRm9yQnVzaW5lc3MiOiJBYnpWRnNfeWw1MWdoTlRGIn0=","userid":20024617,"newuser":0,"apiurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/api\/","wmbasemanurl":"https:\/\/wc-kx-vip.sjc.kixeye.com\/wmbaseman\/","baseurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/api\/wc\/base\/","cdnurl":"https:\/\/wc-fb-cdn6.kixeye.com\/","gameurl":"https:\/\/wc-fb-cdn6.kixeye.com\/game\/","statsurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/recordstats.php","logurl":"https:\/\/debuglog-lb2.sjc.kixeye.com\/debug\/recorddebugdata\/","probeurl":"https:\/\/debuglog-lb2.sjc.kixeye.com\/debug\/recordloadtime\/","mapurl":"http:\/\/wc-kx-vip.sjc.kixeye.com\/worldmapv2\/","gamenamesh":"wc","integ":"kxp","low_level_min_userid":9378000,"low_level_rollout_userid":19767782,"platform_api_url":"https:\/\/api.kixeye.com\/","app_enable_response_checksum":1,"app_enable_encrypt_body":1,"locale":"en_US","splashloader":0,"siu":"https:\/\/wc-kx-vip.sjc.kixeye.com\/","worldmap_servers":"%5B%5B%22wc-fb-gsvip1.sjc.kixeye.com%22%2C2%2C%2280%2C8080%2C8000%2C50000%2C53%2C443%22%5D%2C%5B%22wc-fb-gsvip2.sjc.kixeye.com%22%2C3%2C%2280%22%5D%5D","logsessionid":"200246171466951857","user_level":39,"tutorialstage":"1000","visitBtn":"Visit","homeBtn":"Home","inviteBtn":"Invite a friend"},
+				'game_width'                :'100%',
+				'game_height'               :'750',
+				'fswf_height'               :'133',
+				'fswfversion'               :'11',
+				'user'                      :user,
+				'cdnurl'                    :cdnurl,
+				'assetsurl'                 :'https://wc-fb-cdn6.kixeye.com/game/assets/',
+				'kontagent_url'             :'',
+				'kontagent_api_key'         :'',
+				'kontagent_api_version'     :'',
+				'kx_logger_url'             :'https://bi-logging.sjc.kixeye.com/log',
+				'kx_logger_key'             :'qwerty',
+				'kx_logger_env'             :'prod',
+				'kx_logger_st'              :'load',
+				'giftredir'                 :0,
+                'opt_showleaderboard'       :0, // how many millis delay before showing leaderboard popup, 0 is "never"
+				'fbdata'                    :fbdata,
+				'logurl'                    :logurl,
+				'logsessionid'              :'200246171466951857',
+				'log_h'                     :'',
+				'log_hn'                    :'',
+				'canvas_init_time'          :canvasInitTime,
+				'canvas_load_time'          :loadDiff,
+				'sourcestr'                 :'fbwcbo-aq-t1-18-65-fbid-wcfriendsofwhales-vg',
+				'installts'                 :'1356552865',
+				'fb_access_token'           :'',
+				'adid'                      : '-1',
+				'userid'                    :'20024617',
+				'userlevel'                 :'39',
+				'kx_biapp_url'              :'https://bi-logging.sjc.kixeye.com/kx/www/sr.php',
+                'short_invite_flow'         :'0',
+				'ipaddr'                    : '111.94.71.47',
+                'fanpageurl'                :'http://www.facebook.com/warcommander',
+                'local_currency'            :1,
+				'fromstr'                   :'appcenter',
+				'timeplayed'                :10247419,
+				'gg_timeplayed'             :86400,
+				'gg_max_spend'              :100,
+				'onLoadPopup'               :{},
+				'localcurrencypayments'     :'1',
+				'tp_vendor_id'              : '2POKTDMF',
+				'upLiveUrl'                 : '0',
+                'loadflag'                  :'',     // WC-20233
+                'enable_deep_thought'       : '1',
+                'disable_bi_logging'       : '0',
+                'declinedpermissions'       : '',
+                'deep_thought_request_scheme' : 'https',
+                'deep_thought_request_host' : 'webheads.prod.ae.kixeye.com',
+                'deep_thought_client_request_path' : '/game/3/client/',
+                'deep_thought_game_id' : 'WC',
+                'deep_thought_client_key' : '816b01e9042837fb574abf2571d45c5ede0a9670',
+                'deep_thought_client_secret' : '266a7d73988409c489edeeea9f45c0b4779326ba',
+                'deep_thought_api_version' : 3			};
+			cc = new CCFramework(ccdata);
+
+			// preload bg images for requests
+			var preload = new Array();
+			function doPreload()
+			{
+				for (i = 0; i < doPreload.arguments.length; i++) {
+					preload[i] = new Image()
+					preload[i].src = doPreload.arguments[i]
+				}
+			}
+			doPreload (
+				ccdata.assetsurl+'images/feeddialog/invite_friends_screen.png',
+				ccdata.cdnurl+'images/gift/gift_bg_v3.png'
+			);
+		});
+
+</script>
+<script type="text/javascript" src="https://kxl-cdn-static.kixeye.com/kxpprod/script/kxp-client.min.v203.js"></script>
+
+<script type='text/javascript'>
+		window.addEvent('domready',function(){
+		var rollovers = [];
+		jQuery(".topnavmenuassets").each(
+	    	function(){
+	    		var asrc = this.src.replace("_reg","_over");
+	    		img = new Image();
+	    		img.src = asrc;
+	    		rollovers[this.src] = img;
+			}
+	    );
+
+	    jQuery(".topnavmenuassets").hover(
+	    	function(){if(this.src in rollovers) { this.src = rollovers[this.src].src;} },
+          	function(){this.src = this.src.replace("_over","_reg"); }
+        );
+	});
+
+</script>
+<!-- // If integ data is required and this is not the play iframe, run the command & reload the page -->
+
+
+<div style="margin: 5px 0 8px; text-align: center; color:#FFFFFF;" id="above-game-message">
+    <font size="3"><b>Operation: Omega is Live! <a
+            href="https://www.youtube.com/watch?v=7hrIboXR5Ok&list=PL36F9D0C0C33F3A9B&index=1" target="kixeye">Watch
+        Video</a><br></b> Update: We have reduced the difficulty of the Tier B bases.</font></div>
+
+<script>
+			// show message if the user is using Internet Explorer 6/7
+			if (Browser.ie6 || Browser.ie7){
+				var el = $('above-game-message');
+				if (el)
+				{
+					el.setStyle('margin', 0);
+				}
+				document.write('<h5 align="center" style="margin-top: 0px;" id="ie_msg_atg"><span style="color: red;">War Commander is not supported in this browser!</span> Please upgrade to either <a href="http://google.com/chrome">Chrome</a> or <a href="http://mozilla.org/firefox">Firefox</a>.</h5>');
+			}
+
+</script>
+
+
+<script type="text/javascript" src="/assets/script/message-sauce.v199.js?t=1466951857"></script>
+
+
+<div id="allianceNotifications" style="display:none;"></div>
+
+<div id="topnavbar_back"
+     style="background: url(https://wc-fb-cdn6.kixeye.com/images/navbar2/background_tile.png) bottom center repeat-x;">
+    <div id="topnavbar_test"
+         style="min-width: 740px; margin: auto; overflow: hidden; background: url(https://wc-fb-cdn6.kixeye.com/images/navbar2/background_metal.png) bottom center no-repeat; height: 37px;">
+        <div style='width: 690px; margin: auto; padding-top:6px; padding-left:70px;'>
+
+            <img style='float: left; display: inline; '
+                 src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_cap_left.png' border='0'/>
+            <a style='float: left; display: inline; ' href="#"
+               onclick="cc.showGiftsDialog('gift_select');return false;"><img id="topnav_gift_button"
+                                                                              class='topnavmenuassets'
+                                                                              src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_gifts_reg.png'
+                                                                              border='0'/></a>
+            <a style='float: left; display: inline; ' href="#" onclick="cc.showAttackLog();return false;"><img
+                    class='topnavmenuassets' src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_attacklog_reg.png'
+                    border='0'/></a>
+            <a style='float: left; display: inline; ' href="#" onclick="cc.showLeaderboard();return false;"><img
+                    class='topnavmenuassets'
+                    src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_leaderboard_reg.png' border='0'/></a>
+            <a style='float: left; display: inline; ' href="https://www.kixeye.com/forum/discussion/610994"
+               target="_new"><img class='topnavmenuassets'
+                                  src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_fieldmanual_reg.png'
+                                  border='0'/></a>
+            <a style='float: left; display: inline; ' href="http://play.kixeye.com/forum/categories/war-commander"
+               target="_blank"><img class='topnavmenuassets'
+                                    src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_discuss_reg.png'
+                                    border='0'/></a>
+
+            <img style='float: left; display: inline; '
+                 src='https://wc-fb-cdn6.kixeye.com/images/navbar2/button_cap_right.png' border='0'/>
+            <a style='float: left; display: inline;' href='http://www.kixeye.com/' target='_new'><img
+                    src='https://wc-fb-cdn6.kixeye.com/images/navbar2/kixeye_logo.png' border='0'/></a>
+
+        </div>
+    </div>
+</div>
+
+<div id="content">
+
+    <div id="game"></div>
+
+</div>
+
+
+<script type="text/javaScript">
+	window.addEvent('load',function(){
+		cc.options.loadready = true;
+	});
+
+	window.addEvent('ccfready',function(){
+		if(!cc.checkFlashVersion(11)) $('game').set('html','<h2 style="font-size: 14pt;text-align:center;margin:30px;font-family:Tahoma;">War Commander requires Flash Player 11.2 or greater.<br /><a href="http://get.adobe.com/flashplayer/" target="_blank">Click here to download the latest flash player</a></h2>');
+		else
+		{
+			cc.loadGame($('game'),{'gameurl':'https://wc-fb-cdn6.kixeye.com/game/','loaderversion':8928,'gameversion':7,'softversion':8928,'game_width':'100%','game_height':'750'});
+			cc.setCounter(0);
+
+							window.addEvent("resize", function () { nl.layOutElements(); });
+				nl.layOutElements();
+						}
+	});
+
+	var navLayout = new Class({
+		NAV_CONST_WIDTH: 838,
+
+		layOutElements: function()
+		{
+			var atg_elements = ["above-game-message","hacker_msg_atg","survey_atg","banner_atg","updating_msg_atg","ie_msg_atg"];
+			var winH = window.getSize().y;
+			var contentHeight = winH - 40;
+
+			for(i = 0; i < atg_elements.length; i++)
+			{
+				var el = $(atg_elements[i]);
+				var size;
+				if (el)
+				{
+					contentHeight -= jQuery("#"+atg_elements[i]).outerHeight(true);
+				}
+			}
+
+			contentHeight = Math.max(750, contentHeight); //the game must be a minimum of 750 pixels tall
+			nb = $('gameswf');
+			nb.setProperty("height", contentHeight);
+		}
+	});
+
+	var nl, nb, men;
+	window.addEvent('domready', function()
+	{
+		nl = new navLayout(nb);
+	});
+
+	function onChangeLocale()
+	{
+		var localeVal = $('language-selector').get('value');
+		cc.redirect(cc.options.baseurl+'?v_locale='+localeVal);
+		return false;
+	}
+
+</script>
+<div id="fb-root"></div>
+
+
+<div style="width:1px;height:1px;text-indent:-10000px;overflow:hidden;">
+    <script>
+	kxLogger.logGeneric({
+		'tag': 'load',
+		'stage':'iframeload'
+	});
+
+    </script>
+</div>
+
+<div id="kxp-footer-bar">
+    <div id="kxp-footer-container">
+        <div style="color:#FFF;"><b>
+            ID: 20024617 </b></div>
+
+        <div class="kxp-footer">
+            <ul>
+                <li><a href="http://www.kixeye.com/help/tos" target="_blank">Terms</a></li>
+                <li class="last"><a href="http://www.kixeye.com/help/privacypolicy" target="_blank">Privacy Policy</a>
+                </li>
+                <li class="last">&copy; 2016 KIXEYE Inc. All rights reserved.</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;">
+    </div>
+</div>
+
+
+<script type="text/javascript">
+        window.addEvent('domready',function() {
+			cc.startSessionPolling();
+            //PMS Pixel Firing
+				        		cc.getPmsPixels("DAU", "kxlToken=db56dd015650d25624e6fcbb433e8165e12b8240cbfb8b2557561cec49c4dadf&kx_locale=en_US");//DAU Pixel
+	        	        				cc.callUrl("https://rya.rockyou.com/ams/dot.php?d=pmcasual1");
+			cc.callUrl("https://a.triggit.com/px?u=pN&rtv=warcommander");
+
+
+            		});
+
+</script>
+
+
+<script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-25892031-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+</script>
+
+<script type="text/javascript">
+        // iOvation Integration using Callback Function Collection Method
+
+        // basic configuration
+        var io_install_stm = false; // do not install Active X
+        var io_exclude_stm = 12; // do not run Active X
+        var io_install_flash = false; // do not install Flash
+        var io_enable_rip = true; // collect Real IP information
+        var deviceFingerPrint = '';
+
+        /**
+         * The Callback Function Collection Method allows you to manage blackbox generation in a more event-driven manner.
+         * As blackbox collection progresses, snare.js fires update events when a collection method has completed.
+         * These events trigger a user-defined callback function to update the page with the new blackbox value.
+         * When all of the collection methods are completed, a Boolean flag is set indicating no further updates are
+         * expected and the value is final blackbox value.
+         * This method requires:
+         * 1. Enabling collection of Real IP information by setting io_enable_rip.
+         * 2. Setting the variables to handle user notifications: io_install_flash.
+         * 3. Set io_bb_callback to a function that processes the new blackbox value.
+         * @param bb : the updated value of the blackbox.
+         * @param isComplete : a Boolean indicating whether all the collection methods have completed.
+         */
+        var io_bb_callback = function (bb, isComplete)
+        {
+            console.log('io_bb_callback function called with isComplete: ' + isComplete);
+            if (isComplete) {
+                deviceFingerPrint = bb;
+                console.log('Blackbox collection completed. bb: ' + bb);
+            }
+        };
+
+</script>
+
+<script language="JavaScript" src="https://mpsnare.iesnare.com/snare.js"></script>
+
+<div id="div_b"
+     style="display:none;padding:10px;position:absolute;top: 50%;left: 50%; margin-top: -312px; margin-left: -351px; z-index: 999999;"></div>
+
+<script type="text/javascript">
+    window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ac9b709c97","applicationID":"1747218","transactionName":"NQdQNkIAXxEFUUZdDgxNcRdDFV4PSxg=","queueTime":0,"applicationTime":213,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}
+</script>
+</body>
+</html>
+
+<title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
