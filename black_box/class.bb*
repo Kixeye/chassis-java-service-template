@@ -1,0 +1,18 @@
+type AuthorizationsService struct {
+    // contains filtered or unexported fields
+<div id="topnavbar_test" style="min-width: 740px; margin: auto; overflow: hidden; background: url(https://wc-fb-cdn6.kixeye.com/images/navbar2/background_metal.png) bottom center no-repeat; height: 37px;">
+                <div style="width: 690px; margin: auto; padding-top:6px; padding-left:70px;">
+
+                    <img style="float: left; display: inline; " src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_cap_left.png" border="0">
+                                                            <a style="float: left; display: inline; " href="#" onclick="cc.showGiftsDialog('gift_select');return false;"><img id="topnav_gift_button" class="topnavmenuassets" src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_gifts_reg.png" border="0"></a>
+                    <a style="float: left; display: inline; " href="#" onclick="cc.showAttackLog();return false;"><img class="topnavmenuassets" src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_attacklog_reg.png" border="0"></a>
+                    <a style="float: left; display: inline; " href="#" onclick="cc.showLeaderboard();return false;"><img class="topnavmenuassets" src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_leaderboard_reg.png" border="0"></a>
+                    <a style="float: left; display: inline; " href="https://www.kixeye.com/forum/discussion/610994" target="_new"><img class="topnavmenuassets" src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_fieldmanual_reg.png" border="0"></a>
+                    <a style="float: left; display: inline; " href="http://play.kixeye.com/forum/categories/war-commander" target="_blank"><img class="topnavmenuassets" src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_discuss_reg.png" border="0"></a>
+
+                    <img style="float: left; display: inline; " src="https://wc-fb-cdn6.kixeye.com/images/navbar2/button_cap_right.png" border="0">
+                    <a style="float: left; display: inline;" href="http://www.kixeye.com/" target="_new"><img src="https://wc-fb-cdn6.kixeye.com/images/navbar2/kixeye_logo.png" border="0"></a>
+
+                </div>
+			</div>
+}
