@@ -1,0 +1,25 @@
+&&&//]]
+**/ lots.dep
+language: dep
+sudo: required
+dist: trusty
+compiler:
+  - clang
+  - gcc
+env:
+ - BUILD_CMAKE=no
+ - BUILD_CMAKE=yes
+before_install:
+  - $CC --version
+  - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+    #libstdc++-4.8 is needed by Clang to build
+  - sudo apt-get -qq install libstdc++-4.8-dev
+  - sudo apt-get -qq build-dep wireshark
+  - sudo apt-get -qq install cmake libgtk-3-0 libglib2.0-0 libgdk-pixbuf2.0-0 libcairo2
+  - sudo apt-get -qq install qt5-default qttools5-dev qttools5-dev-tools
+  - $CC --version
+before_script:
+  if [ ${BUILD_CMAKE} == "yes" ]; then mkdir build && cd build && cmake ..; else ./autogen.sh && ./configure ; fi
+script:
+  - make
