@@ -1,0 +1,32 @@
+Message: [Extension] starting to load src//extensions/default/_templateforextensions/
+Source: archive://main-optimized.js
+Line: 2427
+-----------------------
+Message: [Extension] failed to load src//extensions/default/_templateforextensions/
+Source: archive://main-optimized.js
+Line: 2427
+-----------------------
+Message: Could not connect to Typekit Free Fonts Families API
+Source: archive://main-optimized.js
+Line: 1040
+-----------------------
+Message: Reflow Startup: 9978 ms
+Source: archive://main-optimized.js
+Line: 324
+-----------------------
+Message: [Extension] starting to load src//extensions/default/_templateforextensions/
+Source: archive://main-optimized.js
+Line: 2427
+-----------------------
+Message: Could not connect to Typekit Free Fonts Families API
+Source: archive://main-optimized.js
+Line: 1040
+-----------------------
+Message: [Extension] failed to load src//extensions/default/_templateforextensions/
+Source: archive://main-optimized.js
+Line: 2427
+-----------------------
+Message: Reflow Startup: 6589 ms
+Source: archive://main-optimized.js
+Line: 324
+-----------------------
