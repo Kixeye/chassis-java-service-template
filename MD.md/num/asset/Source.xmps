@@ -1,0 +1,4 @@
+﻿duplicateSubtree()
+XMPUtils.duplicateSubtree(source, dest, sourceNS, sourceRoot,
+                                  destNS, destRoot, options)
+  
