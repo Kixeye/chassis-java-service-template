@@ -1,0 +1,18 @@
+; (c) Microsoft Corporation 1997-2000
+;
+; Security Configuration Template for Security Configuration Manager
+
+[version]
+signature="$CHICAGO$"
+DriverVer=07/01/2001,5.1.2600.0
+
+[Profile Description]
+%SCEProfileDescription%
+
+[File Security]
+"%SystemDrive%\",0,"D:AR(A;OICI;GA;;;BA)(A;OICI;GA;;;SY)(A;OICIIO;GA;;;CO)(A;CIOI;GRGX;;;BU)(A;CI;0x00000004;;;BU)(A;CIIO;0x00000002;;;BU)(A;;GRGX;;;WD)"
+
+
+
+[Strings]
+SCEProfileDescription = "Applies default root permissions to the OS partition and propagates them to child objects that are inheriting from the root.  The propagation time depends on the number of unprotected child objects.  See online help for further information."
