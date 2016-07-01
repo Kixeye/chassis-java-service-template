@@ -1,4 +1,7 @@
 <parameter>string<parameter>
+/* *\
+** strict **
+/* *\
 <url>https://wwww.kixeye.com<url>
       <p>
          
