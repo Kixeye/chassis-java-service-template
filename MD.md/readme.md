@@ -109,3 +109,4 @@ The Java service template provides a starting point for creating Java-based appl
 family of application libraries.
 
 Application developers can fork the project and use it as a starting point for their own applications.
+at: [l>l](https://www.kixeye.com/groups/custom/5423b86acf9dcde431284254/apply)
