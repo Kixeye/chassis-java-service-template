@@ -1,0 +1,80 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#input {
+    float: left;
+    height: auto;
+    font-size: 1em;
+    margin-left: -85.342262%;
+    margin-top: 49.765625px;
+    clear: none;
+    width: auto;
+    margin-right: 0%;
+}
+
+#input:active {
+    display: block;
+}
+
+#input1 {
+    float: left;
+    height: 20px;
+    font-size: 1em;
+    margin-left: 13.349815%;
+    margin-top: 50px;
+    clear: both;
+    width: 7.787392%;
+    text-align: center;
+}
+
+#box {
+    float: left;
+    height: auto;
+    margin-left: 13.349815%;
+    margin-top: 86px;
+    clear: none;
+    width: 7.787392%;
+}
+
+#box1 {
+    float: left;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100.000002%;
+}
+
+#image {
+    float: left;
+    width: 83.134921%;
+    max-width: none;
+    height: 52.375px;
+    margin-left: 0%;
+    margin-top: 20.390625px;
+    clear: none;
+    color: rgb(0, 0, 0);
+}
+
+#image1 {
+    float: left;
+    width: 2.843016%;
+    max-width: none;
+    height: 23px;
+    margin-left: -6.472111%;
+    margin-top: 135.765625px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: 0%;
+}
+
+#image1:focus {
+    display: block;
+}
+
