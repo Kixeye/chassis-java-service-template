@@ -1,3 +1,140 @@
+// imported from cc_framework
+/**
+ * 
+ * Copyright 2007
+ * 
+ * Paulius Uza
+ * http://www.uza.lt
+ * 
+ * Dan Florio
+ * http://www.polygeek.com
+ * 
+ * Project website:
+ * http://code.google.com/p/custom-context-menu/
+ * 
+ * --
+ * RightClick for Flash Player. 
+ * Version 0.6.2
+ * Modified for MooTools
+ * 
+ */
+
+var RightClick = new Class({
+	
+	Implements: [Events],
+	
+	FlashObjectID: null,
+	FlashObject: null,
+	FlashContainer: null,
+	Cache: null,
+	Callback: null,
+	CallbackParams: null,
+	
+	log: function(data)
+	{
+		try
+		{
+			if(cc && cc.log) cc.log('RightClick: '+data);
+		} catch(e){}
+	},
+	
+	/**
+	 *	Constructor
+	 */ 
+	initialize: function(options)
+	{
+		this.log('initialize');
+		this.FlashObjectID = options.objectid;
+		this.FlashContainerID = options.containerid;
+		this.Cache = this.FlashObjectID;
+		this.Callback = options.callback;
+		if(options.callbackparams) this.CallbackParams = options.callbackparams;
+		
+		if(window.addEventListener)
+		{
+			this.log('Bind for gecko/webkit');
+			//window.addEvent('mousedown', this.onGeckoMouse.bind(this));
+			//window.addEvent('mousedown', this.bindGeckoMouse());
+			window.addEventListener('mousedown', this.bindGeckoMouse(), true);
+		}
+		else
+		{
+			this.log('Bind for IE');
+			$(this.FlashContainerID).onmouseup = function() { $(this.FlashContainerID).releaseCapture(); }
+			document.oncontextmenu = function(){ if(window.event.srcElement.id == this.FlashObjectID) { return false; } else { this.Cache = "nan"; }}
+			$(this.FlashContainerID).onmousedown = this.onIEMouse;
+		}
+	},
+	
+	/**
+	 * GECKO / WEBKIT event overkill
+	 * @param {Object} eventObject
+	 */
+	killEvents: function(eventObject)
+	{
+		this.log('killEvents');
+		if(eventObject)
+		{
+			//eventObject = new Event(eventObject);
+			eventObject.stopPropagation();
+			eventObject.preventDefault();
+			if(eventObject.preventCapture) eventObject.preventCapture();
+		 	if(eventObject.preventBubble) eventObject.preventBubble();
+		}
+	},
+	/**
+	 * GECKO / WEBKIT call right click
+	 * @param {Object} ev
+	 */
+	bindGeckoMouse: function(ev)
+	{
+		this.log('bindGeckoMouse');
+		return function(ev)
+		{
+			this.log('onGeckoMouse');
+			if(ev.button != 0)
+			{
+				this.killEvents(ev);
+				if(ev.target.id == this.FlashObjectID && this.Cache == this.FlashObjectID)
+				{
+					this.call();
+				}
+				this.Cache = ev.target.id;
+			}
+		}.bind(this)
+	},
+	/**
+	 * IE call right click
+	 * @param {Object} ev
+	 */
+	onIEMouse: function()
+	{
+		this.log('onIEMouse');
+		if(event.button > 1)
+		{
+			if(window.event.srcElement.id == this.FlashObjectID && this.Cache == this.FlashObjectID)
+			{
+				this.call(); 
+			}
+			$(this.FlashContainerID).setCapture();
+			if(window.event.srcElement.id)
+			{
+				this.Cache = window.event.srcElement.id;
+			}
+		}
+	},
+	/**
+	 * Main call to Flash External Interface
+	 */
+	call: function()
+	{
+		this.log('call');
+		try
+		{
+			Swiff.remote($(this.FlashObjectID),this.callback,this.callbackParams);
+		} catch(e){}
+	}
+});
 var g=this,p=function(a,b){var c=a.split("."),d=g;c[0]in d||!d.execScript||d.execScript("var "+c[0]);for(var e;c.length&&(e=c.shift());)c.length||void 0===b?d=d[e]?d[e]:d[e]={}:d[e]=b},q=function(a,b){function c(){}c.prototype=b.prototype;a.o=b.prototype;a.prototype=new c;a.m=function(a,c,f){for(var n=Array(arguments.length-2),k=2;k<arguments.length;k++)n[k-2]=arguments[k];return b.prototype[c].apply(a,n)}};var r=function(a){if(Error.captureStackTrace)Error.captureStackTrace(this,r);else{var b=Error().stack;b&&(this.stack=b)}a&&(this.message=String(a))};q(r,Error);var aa=function(a,b){for(var c=a.split("%s"),d="",e=Array.prototype.slice.call(arguments,1);e.length&&1<c.length;)d+=c.shift()+e.shift();return d+c.join("%s")},t=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")},u=function(a,b){return a<b?-1:a>b?1:0};var w=function(a,b){b.unshift(a);r.call(this,aa.apply(null,b));b.shift()};q(w,r);var x=function(a,b,c){if(!a){var d="Assertion failed";if(b)var d=d+(": "+b),e=Array.prototype.slice.call(arguments,2);throw new w(""+d,e||[]);}};var ba=Array.prototype.forEach?function(a,b,c){x(null!=a.length);Array.prototype.forEach.call(a,b,c)}:function(a,b,c){for(var d=a.length,e="string"==typeof a?a.split(""):a,f=0;f<d;f++)f in e&&b.call(c,e[f],f,a)};var y;a:{var z=g.navigator;if(z){var A=z.userAgent;if(A){y=A;break a}}y=""}var B=function(a){return-1!=y.indexOf(a)};var ca=B("Opera"),C=B("Trident")||B("MSIE"),da=B("Edge"),D=B("Gecko")&&!(-1!=y.toLowerCase().indexOf("webkit")&&!B("Edge"))&&!(B("Trident")||B("MSIE"))&&!B("Edge"),E=-1!=y.toLowerCase().indexOf("webkit")&&!B("Edge"),ea=E&&B("Mobile"),F=function(){var a=g.document;return a?a.documentMode:void 0},G;
 a:{var H="",I=function(){var a=y;if(D)return/rv\:([^\);]+)(\)|;)/.exec(a);if(da)return/Edge\/([\d\.]+)/.exec(a);if(C)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(E)return/WebKit\/(\S+)/.exec(a);if(ca)return/(?:Version)[ \/]?(\S+)/.exec(a)}();I&&(H=I?I[1]:"");if(C){var J=F();if(null!=J&&J>parseFloat(H)){G=String(J);break a}}G=H}
 var K=G,L={},M=function(a){if(!L[a]){for(var b=0,c=t(String(K)).split("."),d=t(String(a)).split("."),e=Math.max(c.length,d.length),f=0;0==b&&f<e;f++){var n=c[f]||"",k=d[f]||"",h=RegExp("(\\d*)(\\D*)","g"),l=RegExp("(\\d*)(\\D*)","g");do{var m=h.exec(n)||["","",""],v=l.exec(k)||["","",""];if(0==m[0].length&&0==v[0].length)break;b=u(0==m[1].length?0:parseInt(m[1],10),0==v[1].length?0:parseInt(v[1],10))||u(0==m[2].length,0==v[2].length)||u(m[2],v[2])}while(0==b)}L[a]=0<=b}},N=g.document,fa=N&&C?F()||
