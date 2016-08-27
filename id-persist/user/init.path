@@ -1,0 +1,12 @@
+init: ->
+
+  initialize: ->
+    setupStorage(@)
+    @init(arguments...)
+  restoreDefaults: (options) ->
+    attrs = _.extend({}, _.result(@, 'defaults'))
+
+    @set(attrs, options)
+  super: getSuper
+
+}
