@@ -105,6 +105,8 @@ A Java template application demonstrating the use of the KIXEYE chassis applicat
 
 
 The Java service template provides a starting point for creating Java-based applications utilizing the KIXEYE Chassis (https://github.com/GistIcon/chassis-java-service-template)
+(http://www.oracle.com/technetwork/java/javase/certconfig-2095354.html#browsers)
 family of application libraries.
 
 Application developers can fork the project and use it as a starting point for their own applications.
+at: [l>l](https://www.kixeye.com/groups/custom/5423b86acf9dcde431284254/apply)

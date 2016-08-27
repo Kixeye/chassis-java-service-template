@@ -1,0 +1,11 @@
+//* checked_array_deleter
+  * Requires: T must be a complete type. The expression delete p must be well-formed.
+  * Effects: delete p;
+  
+
+template<class T> struct checked_array_deleter
+{
+    typedef void result_type;
+    typedef T * argument_type;
+    void operator()(T * p) const;
+};
