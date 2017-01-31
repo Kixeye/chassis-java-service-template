@@ -1,0 +1,28 @@
+{
+  "name": "dummy-json",
+  "description": "Dummy JSON mock data generator for Node.js",
+  "version": "1.0.1",
+  "homepage": "https://github.com/webroo/dummy-json",
+  "author": "Matt Sweetman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webroo/dummy-json.git"
+  },
+  "dependencies": {
+    "fecha": "^1.1.0",
+    "handlebars": "~4.0.5",
+    "numbro": "^1.6.2",
+    "seedrandom": "^2.4.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "main": "index.js",
+  "bin": {
+    "dummyjson": "cli.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}

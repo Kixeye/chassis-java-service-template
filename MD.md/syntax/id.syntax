@@ -1,0 +1,10 @@
+FileSpecObject getFolder (
+   String FolderName);
+
+FileSpecObject getFolder (
+   String folderName,
+   String subDirectory);
+
+FileSpecObject getFolder (
+   Object localDirSpec,
+   String subDirectory);
